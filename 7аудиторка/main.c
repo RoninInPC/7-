@@ -12,10 +12,10 @@ int main() {
 	}
 	Ans1[size] = '\0';
 	flcose(f);
-	char* Ans = BiggestNotRepeatSymbolInString(Ans1);
-	printf("%s", Ans);
+	Ans Answ = BiggestNotRepeatSymbolInString(Ans1);
+	printf("%s", Answ.Str);
 	fopen_s(&f, "input1.txt", "w");
-	fprintf("%s", Ans);
+	fprintf("%s", Answ.Str);
 	fclose(f);
 	return 0;
 }
